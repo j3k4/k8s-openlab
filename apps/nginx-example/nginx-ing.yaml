@@ -8,9 +8,10 @@ metadata:
 spec:
   #ingressClassName: nginx-example
   rules:
-  - http:
+  - host: nginx.sva.lab
+    http:
       paths:
-      - path: /nginxmax
+      - path: /
         pathType: Prefix
         backend:
           service:
