@@ -11,7 +11,7 @@ spec:
   source: 
     path: apps/nginx-example
     repoURL: https://github.com/j3k4/k8s-openlab
-    targetRevision: nginx
+    targetRevision: HEAD
   syncPolicy: 
     automated:
       prune: true
