@@ -12,7 +12,7 @@ spec:
   source:
     path: cd-apps
     repoURL: 'https://github.com/j3k4/k8s-openlab'
-    targetRevision: HEAD
+    targetRevision: temp
   sources: []
   project: default
   syncPolicy:
