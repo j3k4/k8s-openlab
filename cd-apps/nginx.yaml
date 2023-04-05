@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: nginx-app
+  namespace: nginx
+spec:
+  destination:
+    namespace: nginx
+    server: https://kubernetes.default.svc 
+  project: default 
+  source: 
+    path: apps/nginx-example
+    repoURL: https://github.com/j3k4/k8s-openlab
+    targetRevision: nginx
+  syncPolicy: 
+    automated:
+      prune: true
+      selfHeal: true
