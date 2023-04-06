@@ -1,7 +1,4 @@
 
-global:
-  rbac:
-    create: false
 alertmanager:
   enabled: false
   ingress:
