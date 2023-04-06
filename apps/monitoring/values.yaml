@@ -1,4 +1,10 @@
 
+
+kubeProxy:
+  service:
+    selector:
+      component: kube-proxy
+
 alertmanager:
   enabled: false
   ingress:
