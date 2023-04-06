@@ -552,7 +552,8 @@ prometheusOperator:
       resources: {}
       priorityClassName: ""
       annotations: {}
-      podAnnotations: {}
+      podAnnotations: 
+        linkerd.io/inject: disabled
       nodeSelector: {}
       affinity: {}
       tolerations: []
