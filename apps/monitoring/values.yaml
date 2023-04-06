@@ -225,7 +225,7 @@ grafana:
   rbac:
     pspEnabled: false
   ingress:
-    enabled: false
+    enabled: true
     annotations: {}
     labels: {}
     hosts: 
@@ -750,7 +750,7 @@ prometheus:
     annotations: {}
     data: {}
   ingress:
-    enabled: false
+    enabled: true
     annotations: {}
     labels: {}
     hosts: 
