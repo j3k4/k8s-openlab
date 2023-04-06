@@ -1,0 +1,29 @@
+
+
+kubeProxy:
+  service:
+    selector:
+      component: kube-proxy
+
+alertmanager:
+  enabled: false
+  ingress:
+    enabled: true
+    hosts: 
+    - alarm.sva.lab
+    path: /
+grafana:
+  enabled: true
+  ingress:
+    enabled: true
+    hosts: 
+    - grafana.sva.lab
+    path: /
+  grafana.defaultDashboardsTimezone: Europe/Berlin
+prometheus:
+  enabled: true
+  ingress:
+    enabled: true
+    hosts: 
+    - prom.sva.lab
+    path: /
