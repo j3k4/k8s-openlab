@@ -12,7 +12,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: validate manifests
-        uses: makocchi-git/actions-k8s-manifests-validate-kubeval@1.0.0
+        uses: azure/k8s-lint@v1
         with:
-          files: cd-apps,apps
-          token: ${{ secrets.GITHUB_TOKEN }}
+          manifests: |
+              cd-apps/*.yaml
+              apps/**/*.yaml
