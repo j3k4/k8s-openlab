@@ -1,3 +1,4 @@
+
 # k8s openlab
 
 Das repo ist zu trainingszwecken erstell worden, um sich mit Kubernetes und einiges Applikationen und damit verbundenen Services sich auseinander zu setzen.
@@ -27,4 +28,3 @@ Die folgenden Services sind als Base Applikationen gedach:
 | Prometheus | Sammeln von Daten und Metriken von dem Cluster und deren Services |
 | Grafana | Grafisch aufbereitete Darstellung von Daten und Metriken |
 | ArgoCD | Automatisierte Syncronisation mit diesem Repo |
-
