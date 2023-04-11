@@ -12,8 +12,4 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: validate manifests
-        uses: azure/k8s-lint@v1
-        with:
-          manifests: |
-              cd-apps/*.yaml
-              apps/**/*.yaml
+        uses: yokawasa/action-setup-kube-tools@v0.9.2
