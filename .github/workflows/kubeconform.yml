@@ -12,8 +12,7 @@ jobs:
           entrypoint: '/kubeconform'
           args: |
             -schema-location default \
-            -schema-location https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+            -schema-location https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml \
             -summary \
             -output json \
             cd-apps/
-            # https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
