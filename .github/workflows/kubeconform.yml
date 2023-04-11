@@ -10,9 +10,4 @@ jobs:
       - uses: docker://ghcr.io/yannh/kubeconform:master
         with:
           entrypoint: '/kubeconform'
-          args: |
-            -schema-location default \
-            -schema-location https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml \
-            -summary \
-            -output json \
-            cd-apps/
+          args: "-schema-location default -schema-location 'https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml' -summary -output json cd-apps"
