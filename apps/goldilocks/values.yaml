@@ -5,6 +5,11 @@ vpa:
   updater:
     enabled: false
 
+controller:
+  # controller.flags -- A map of additional flags to pass to the controller
+  flags: 
+   - "--on-by-default"
+
 dashboard:
   # dashboard.basePath -- Path on which the dashboard is served. Defaults to `/`
   basePath: null
@@ -20,8 +25,7 @@ dashboard:
     # dashboard.service.annotations -- Extra annotations for the dashboard service
     annotations: {}
   # dashboard.flags -- A map of additional flags to pass to the dashboard
-  flags: 
-   - "--on-by-default"
+  flags: {}
   # dashboard.logVerbosity -- Dashboard log verbosity. Can be set from 1-10 with 10 being extremely verbose
   logVerbosity: "2"
   # dashboard.excludeContainers -- Container names to exclude from displaying in the Goldilocks dashboard
