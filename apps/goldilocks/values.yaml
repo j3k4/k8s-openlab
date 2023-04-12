@@ -16,7 +16,7 @@ dashboard:
   # dashboard.enabled -- If true, the dashboard component will be installed
   enabled: true
   # dashboard.replicaCount -- Number of dashboard pods to run
-  replicaCount: 1
+  replicaCount: 2
   service:
     # dashboard.service.type -- The type of the dashboard service
     type: ClusterIP
