@@ -8,7 +8,7 @@ vpa:
 controller:
   # controller.flags -- A map of additional flags to pass to the controller
   flags: 
-   --on-by-default: 
+   on-by-default: 
 
 dashboard:
   # dashboard.basePath -- Path on which the dashboard is served. Defaults to `/`
