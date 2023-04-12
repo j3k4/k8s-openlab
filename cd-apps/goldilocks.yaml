@@ -1,0 +1,30 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: goldilocks
+  namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: goldilocks
+    server: https://kubernetes.default.svc
+  project: default
+  sources:
+  - repoURL: https://charts.fairwinds.com/stable
+    chart: goldilocks
+    targetRevision: 6.5.2
+    helm:
+      valueFiles:
+        - $valpath/apps/goldilocks/values.yaml
+  - repoURL: https://github.com/j3k4/k8s-openlab
+    targetRevision: HEAD
+    ref: valpath
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+      #- Replace=true
+      - PruneLast=true
