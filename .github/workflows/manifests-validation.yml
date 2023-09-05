@@ -10,6 +10,6 @@ jobs:
   validation:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: validate manifests
         uses: yokawasa/action-setup-kube-tools@v0.9.3
